@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+h1 {
+    padding: 20px 0px;
+    text-align: center;
+    width: 100%;
+    background-color: teal;
+    color: #ffffff;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div {
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-div {
+    margin: 10px 0px;
+}
+input, textarea, button, #date, #temp, #content {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 50%;
+    margin: 0% 25%;
+    background-color: #469594;
+}
+button:hover {
+    background-color: teal;
+}
+#data-div {
+    margin-top: 10px;
+    width: 100%;
+}
+#date, #temp, #content {
+    margin-bottom: 10px;
+    background-color: rgba(220,220,220, .2);
+}
+
+@media(max-width: 600px) {
+    h1 {
+        padding: 10px 0px;
+        font-size: 22px;
+    }
+    .input-div {
+        margin: 8px 0px;
+    }
+    input, textarea, button, #date, #temp, #content {
+        padding: 15px;
+    }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
